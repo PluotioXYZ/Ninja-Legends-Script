@@ -1,4 +1,4 @@
-User = game.Players.LocalPlayer
+User = game.Players.LocalPlayer.Name
 _G.AutoSwing = false
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("NinjaLegendsScript", "DarkTheme")
