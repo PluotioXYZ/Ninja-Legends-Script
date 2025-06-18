@@ -1,3 +1,4 @@
+User = game.Players.LocalPlayer
 _G.AutoSwing = false
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("NinjaLegendsScript", "DarkTheme")
@@ -22,7 +23,7 @@ Section:NewButton("LoadAutoSwing", "Loads a simple autoswing script", function()
     [1] = "swingKatana";
 }
 
-game:GetService("Players"):WaitForChild("Pluotio", 9e9):WaitForChild("ninjaEvent", 9e9):FireServer(unpack(args))
+game:GetService("Players"):WaitForChild(User, 9e9):WaitForChild("ninjaEvent", 9e9):FireServer(unpack(args))
         local SwingDelay = _G.AutoSwingDelay
         task.wait(SwingDelay)
     end
