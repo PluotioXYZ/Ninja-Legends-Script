@@ -34,7 +34,7 @@ local Section = AutoSellTab:NewSection("Settings")
 Section:NewSlider("AutoSell Delay", "Changes the wait time in between sells", 5, 0, function(Delay) -- 500 (MaxValue) | 0 (MinValue)
     _G.AutoSellDelay = (Delay)
 end)
-Section:NewToggle("ToggleAutoSwing", "Toggles AutoSwing", function(state)
+Section:NewToggle("ToggleAutoSell", "Toggles AutoSell", function(state)
     if state then
         _G.AutoSell = true
     else
