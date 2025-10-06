@@ -44,7 +44,7 @@ end)
 Section:NewButton("LoadAutoSell", "Loads a simple autosell script", function()
     while _G.AutoSell do
         local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-        local location = 71.1857986, 13, -46.5102806
+        local location = 71.1857986, 2.99802518, -46.5102806, -0.766061425, -1.0103828e-08, -0.64276737, -7.54091367e-09, 1, -6.73186795e-09, 0.64276737, -3.09970993e-10, -0.766061425
         rootPart.CFrame = location
         task.wait(_G.AutoSellDelay)
     end
